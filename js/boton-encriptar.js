@@ -7,19 +7,19 @@ var mensaje = Array.from(input);
 for (var i= 0;i <mensaje.length;i++){
     var letras = mensaje[i];
     
-    if (letras =="a" ){
+    if (letras =="a" || letras =="á" ){
         mensaje[i] = "ai";
     }
-    if (letras == "e"){
+    if (letras == "e"|| letras =="é"){
         mensaje[i] = "enter";
     }
-    if (letras == "i"){
+    if (letras == "i"|| letras =="í"){
         mensaje[i] = "imes";
     }
-    if (letras == "o"){
+    if (letras == "o"|| letras =="ó"){
         mensaje[i] = "ober";
     }
-    if (letras == "u"){
+    if (letras == "u"|| letras =="ú"){
         mensaje[i] = "ufat";
     }
 }
