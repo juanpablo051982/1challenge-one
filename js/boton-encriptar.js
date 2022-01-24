@@ -2,10 +2,12 @@ var encriptar= document.querySelector(".boton-encriptar");
 encriptar.addEventListener("click",function(){
 
 var input = document.getElementById("texto-encriptar").value;
+input =input.toLowerCase();
 var mensaje = Array.from(input);
     
 for (var i= 0;i <mensaje.length;i++){
     var letras = mensaje[i];
+   
     
     if (letras =="a" || letras =="á" ){
         mensaje[i] = "ai";
